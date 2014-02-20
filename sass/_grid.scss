@@ -1,0 +1,65 @@
+/* =Basic Grid
+----------------------------------------------------------------------------- */
+.grid-100, .full{ width: 100%; }
+.grid-95{ width: 95%; }
+.grid-90{ width: 90%; }
+.grid-85{ width: 85%; }
+.grid-80{ width: 80%; }
+.grid-75{ width: 75%; }
+.grid-70{ width: 70%; }
+.grid-65{ width: 65%; }
+.grid-60{ width: 60%; }
+.grid-55{ width: 55%; }
+.grid-50, .half{ width: 50%; }
+.grid-45{ width: 45%; }
+.grid-40{ width: 40%; }
+.grid-35{ width: 35%; }
+.grid-30{ width: 30%; }
+.grid-33, .third{ width: 33.33%; }
+.grid-25{ width: 25%; }
+.grid-20{ width: 20%; }
+.grid-15{ width: 15%; }
+.grid-10{ width: 10%; }
+.grid-5{ width: 5%; }
+
+
+
+
+/* =Rows & Padding
+----------------------------------------------------------------------------- */
+$pad-val: 25px;
+$row-margin: 20px;
+
+.row{
+	margin: $row-margin 0;
+}
+
+.pad-r{
+	padding-right: $pad-val;
+}
+.pad-l{
+	padding-left: $pad-val;
+}
+.pad-r-l{
+	padding-right: $pad-val;
+	padding-left: $pad-val;
+}
+.pad-all{
+	padding: $pad-val;
+}
+
+
+/* =Media Queries
+----------------------------------------------------------------------------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+  
+	.container{
+		width: 100%;
+	}
+
+	[class *='grid-']{
+		width: 100%;    
+	}
+}
