@@ -23,6 +23,32 @@
 .grid-5{ width: 5%; }
 
 
+
+
+/* =Rows & Padding
+----------------------------------------------------------------------------- */
+$pad-val: 25px;
+$row-margin: 20px;
+
+.row{
+	margin: $row-margin 0;
+}
+
+.pad-r{
+	padding-right: $pad-val;
+}
+.pad-l{
+	padding-left: $pad-val;
+}
+.pad-r-l{
+	padding-right: $pad-val;
+	padding-left: $pad-val;
+}
+.pad-all{
+	padding: $pad-val;
+}
+
+
 /* =Media Queries
 ----------------------------------------------------------------------------- */
 @media only screen 
